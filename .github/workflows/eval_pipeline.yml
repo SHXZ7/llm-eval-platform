@@ -39,6 +39,15 @@ jobs:
           pip install -r requirements.txt
 
 
+      - name: Create Output Directories
+
+        run: |
+
+          mkdir -p outputs/eval_runs
+
+          mkdir -p outputs/reports
+
+
       - name: Run Evaluation Pipeline
 
         env:
