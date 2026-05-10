@@ -1,6 +1,7 @@
 import json
 import sys
 import os
+import matplotlib.pyplot as plt
 
 from app.models.schemas import EvalResult
 from app.evals.comparator import compare_runs
