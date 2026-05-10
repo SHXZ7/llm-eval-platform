@@ -1,3 +1,4 @@
+import os
 import matplotlib.pyplot as plt
 from jinja2 import Environment
 from jinja2 import FileSystemLoader
@@ -19,6 +20,11 @@ def generate_trend_chart(
     plt.ylabel("Accuracy")
 
     plt.title("Accuracy Trend")
+
+    os.makedirs(
+        "outputs/reports",
+        exist_ok=True
+    )
 
     plt.savefig(output_path)
 
@@ -128,6 +134,11 @@ def generate_report(
     report_path = (
         "outputs/reports/"
         "latest_report.html"
+    )
+
+    os.makedirs(
+        "outputs/reports",
+        exist_ok=True
     )
 
     with open(report_path, "w") as f:
