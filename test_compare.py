@@ -84,6 +84,16 @@ new_results = [
 ]
 
 
+if not new_results:
+
+    print(
+        "No eval results to compare. "
+        "Run 'python main.py' first to generate baseline."
+    )
+
+    sys.exit(0)
+
+
 thresholds = load_thresholds(
     "configs/thresholds.yaml"
 )
