@@ -1,5 +1,6 @@
 import json
 import sys
+import os
 
 from app.models.schemas import EvalResult
 from app.evals.comparator import compare_runs
@@ -27,11 +28,24 @@ from app.evals.drift_detector import (
 )
 
 
-with open(
+baseline_path = (
     "outputs/eval_runs/eval_v1.json"
-) as f:
+)
 
-    old_data = json.load(f)
+if os.path.exists(baseline_path):
+
+    with open(baseline_path) as f:
+
+        old_data = json.load(f)
+
+else:
+
+    print(
+        "No baseline found. "
+        "Using current run as baseline."
+    )
+
+    old_data = None
 
 
 with open(
@@ -39,6 +53,10 @@ with open(
 ) as f:
 
     new_data = json.load(f)
+
+
+if old_data is None:
+    old_data = new_data
 
 
 old_results = [

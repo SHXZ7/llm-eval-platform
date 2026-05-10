@@ -9,6 +9,9 @@ on:
       - synchronize
       - reopened
 
+    paths:
+      - "app/llm/prompts/**"
+
 
 jobs:
 
