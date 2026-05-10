@@ -49,11 +49,24 @@ else:
     old_data = None
 
 
-with open(
+candidate_path = (
     "outputs/eval_runs/eval_v2.json"
-) as f:
+)
 
-    new_data = json.load(f)
+if os.path.exists(candidate_path):
+
+    with open(candidate_path) as f:
+
+        new_data = json.load(f)
+
+else:
+
+    print(
+        "No candidate eval found. "
+        "Generating fresh results."
+    )
+
+    new_data = []
 
 
 if old_data is None:
