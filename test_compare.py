@@ -1,6 +1,7 @@
 import json
 import sys
 import os
+import glob
 import matplotlib.pyplot as plt
 
 from app.models.schemas import EvalResult
@@ -33,16 +34,19 @@ baseline_path = (
     "baselines/baseline_v1.json"
 )
 
+latest_run = sorted(
+    glob.glob(
+        "outputs/eval_runs/*.json"
+    )
+)[-1]
+
+
 with open(baseline_path) as f:
 
     previous_data = json.load(f)
 
 
-candidate_path = (
-    "outputs/eval_runs/eval_v2.json"
-)
-
-with open(candidate_path) as f:
+with open(latest_run) as f:
 
     current_data = json.load(f)
 

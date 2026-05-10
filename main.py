@@ -8,7 +8,7 @@ from app.evals.runner import run_evaluation
     
 async def main() -> None:
     prompt_config = load_prompt(
-        "app/llm/prompts/v1.yaml"
+        "app/llm/prompts/v2.yaml"
     )
 
     dataset = load_dataset(
