@@ -1,0 +1,492 @@
+[
+  {
+    "case_id": "case_031",
+    "expected_category": "billing",
+    "predicted_category": "general",
+    "expected_summary": "Customer demands long-overdue refund with frustration.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": false,
+    "summary_score": 1,
+    "latency_ms": 300.04899999767076,
+    "prompt_tokens": 71,
+    "completion_tokens": 9,
+    "total_tokens": 80,
+    "difficulty": "medium",
+    "raw_output": {
+      "id": "chatcmpl-ce7e6762-b6f5-4e70-b6e0-9f79783bee6c",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "I classify this email as: Technical.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391776,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 71,
+        "total_tokens": 80,
+        "queue_time": 0.056073813,
+        "prompt_time": 0.003441317,
+        "completion_time": 0.044277578,
+        "total_time": 0.047718895
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86hzepe5r9e15w8sz294wd",
+        "seed": 1759957101
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_032",
+    "expected_category": "technical",
+    "predicted_category": "general",
+    "expected_summary": "Customer reports data loss following an app update.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": false,
+    "summary_score": 1,
+    "latency_ms": 154.94480000052135,
+    "prompt_tokens": 63,
+    "completion_tokens": 10,
+    "total_tokens": 73,
+    "difficulty": "hard",
+    "raw_output": {
+      "id": "chatcmpl-873de44b-cd0c-46cb-97b6-6d9f2bafc894",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "I would classify this email as: Technical.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391779,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 63,
+        "total_tokens": 73,
+        "queue_time": 0.056438174,
+        "prompt_time": 0.002214285,
+        "completion_time": 0.036790938,
+        "total_time": 0.039005223
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86j1t3eq0reagqsjbkca3v",
+        "seed": 1190528250
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_033",
+    "expected_category": "account",
+    "predicted_category": "general",
+    "expected_summary": "Customer is unable to log in after exhausting options.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": false,
+    "summary_score": 1,
+    "latency_ms": 275.68050000991207,
+    "prompt_tokens": 59,
+    "completion_tokens": 10,
+    "total_tokens": 69,
+    "difficulty": "hard",
+    "raw_output": {
+      "id": "chatcmpl-729cc5cd-9cfd-4f99-acaf-4e8c6a87ef34",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "I would classify this email as: Technical.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391781,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_4f6d808339",
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 59,
+        "total_tokens": 69,
+        "queue_time": 0.159828262,
+        "prompt_time": 0.001956336,
+        "completion_time": 0.056550851,
+        "total_time": 0.058507187
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86j455eq7ta148jqf025sy",
+        "seed": 9888897
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_034",
+    "expected_category": "general",
+    "predicted_category": "general",
+    "expected_summary": "Customer inquires about team collaboration functionality.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": true,
+    "summary_score": 1,
+    "latency_ms": 462.01980000478216,
+    "prompt_tokens": 56,
+    "completion_tokens": 63,
+    "total_tokens": 119,
+    "difficulty": "easy",
+    "raw_output": {
+      "id": "chatcmpl-0c69f3e8-5916-4604-bd3b-6646a3b2ec88",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "I classify this email as: Technical\n\nRegarding your question, I'm a large language model, I can be used to support team collaboration features by providing information, answering questions, and assisting with tasks. However, I'm not a replacement for dedicated collaboration tools, but rather a supplement to enhance teamwork and productivity.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391784,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_3272ea2d91",
+      "usage": {
+        "completion_tokens": 63,
+        "prompt_tokens": 56,
+        "total_tokens": 119,
+        "queue_time": 0.160432669,
+        "prompt_time": 0.001947651,
+        "completion_time": 0.243030276,
+        "total_time": 0.244977927
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86j6kje6ebqe19xs3dgp8k",
+        "seed": 476820535
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_035",
+    "expected_category": "billing",
+    "predicted_category": "general",
+    "expected_summary": "Customer reports duplicate charge and dashboard access issue.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": false,
+    "summary_score": 1,
+    "latency_ms": 193.93769999442156,
+    "prompt_tokens": 71,
+    "completion_tokens": 10,
+    "total_tokens": 81,
+    "difficulty": "hard",
+    "raw_output": {
+      "id": "chatcmpl-f65a371c-748b-4021-b5ca-6e2751147a2f",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "I would classify this email as: Technical.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391786,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 71,
+        "total_tokens": 81,
+        "queue_time": 0.057642791,
+        "prompt_time": 0.006722385,
+        "completion_time": 0.06791377,
+        "total_time": 0.074636155
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86j97yf3p916r0ds0k318g",
+        "seed": 1913657149
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_036",
+    "expected_category": "account",
+    "predicted_category": "general",
+    "expected_summary": "Customer reports account suspended without reason.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": false,
+    "summary_score": 1,
+    "latency_ms": 198.53939999302384,
+    "prompt_tokens": 58,
+    "completion_tokens": 9,
+    "total_tokens": 67,
+    "difficulty": "hard",
+    "raw_output": {
+      "id": "chatcmpl-1417f331-697a-40c0-8c6e-31eca4890a26",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "Je classe cet email comme : Technique.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391789,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 58,
+        "total_tokens": 67,
+        "queue_time": 0.057686508,
+        "prompt_time": 0.002942351,
+        "completion_time": 0.064621352,
+        "total_time": 0.067563703
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86jbm7eqy8zfa5qte87qjq",
+        "seed": 81711899
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_037",
+    "expected_category": "technical",
+    "predicted_category": "general",
+    "expected_summary": "Customer reports non-functional CSV export button.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": false,
+    "summary_score": 1,
+    "latency_ms": 189.42290000268258,
+    "prompt_tokens": 61,
+    "completion_tokens": 10,
+    "total_tokens": 71,
+    "difficulty": "medium",
+    "raw_output": {
+      "id": "chatcmpl-477c0c96-b3c2-4028-b1a4-829f4a1c8f50",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "I would classify this email as: Technical.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391791,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 61,
+        "total_tokens": 71,
+        "queue_time": 0.055704436,
+        "prompt_time": 0.00597455,
+        "completion_time": 0.067136875,
+        "total_time": 0.073111425
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86je0bf3zszk9j1efytwep",
+        "seed": 29965359
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_038",
+    "expected_category": "general",
+    "predicted_category": "general",
+    "expected_summary": "Customer asks how to cancel their subscription.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": true,
+    "summary_score": 1,
+    "latency_ms": 641.3211000035517,
+    "prompt_tokens": 56,
+    "completion_tokens": 100,
+    "total_tokens": 156,
+    "difficulty": "easy",
+    "raw_output": {
+      "id": "chatcmpl-be0e2634-11f9-4481-9815-82143fd18155",
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "message": {
+            "content": "I would classify this email as: Technical.\n\nTo cancel your subscription, you can follow these steps: \n\n1. Log in to your account on the company's website.\n2. Navigate to the 'Subscriptions' or 'Account Settings' section.\n3. Look for the 'Cancel Subscription' or 'Unsubscribe' option and click on it.\n4. Confirm that you want to cancel your subscription.\n\nIf you're having trouble finding the option or need assistance, you can also contact the company's",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391794,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_0761e44d7b",
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 56,
+        "total_tokens": 156,
+        "queue_time": 0.284330391,
+        "prompt_time": 0.005420885,
+        "completion_time": 0.293886076,
+        "total_time": 0.299306961
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86jgbxer9ag7ppgpp25aaa",
+        "seed": 1967218080
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_039",
+    "expected_category": "billing",
+    "predicted_category": "general",
+    "expected_summary": "Customer reports being billed at old premium rate after downgrade.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": false,
+    "summary_score": 1,
+    "latency_ms": 263.2717000087723,
+    "prompt_tokens": 65,
+    "completion_tokens": 9,
+    "total_tokens": 74,
+    "difficulty": "medium",
+    "raw_output": {
+      "id": "chatcmpl-ffefffd0-5c4a-4a1a-a13e-31cca4e4f541",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "I classify this email as: Technical.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391797,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_4f6d808339",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 65,
+        "total_tokens": 74,
+        "queue_time": 0.162622679,
+        "prompt_time": 0.002163031,
+        "completion_time": 0.042539438,
+        "total_time": 0.044702469
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86jk60e75v7xd8ngz8mcka",
+        "seed": 48895711
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_040",
+    "expected_category": "technical",
+    "predicted_category": "general",
+    "expected_summary": "Customer reports video playback failure specific to Safari.",
+    "predicted_summary": "Parsing failure.",
+    "category_correct": false,
+    "summary_score": 1,
+    "latency_ms": 178.73120000876952,
+    "prompt_tokens": 64,
+    "completion_tokens": 10,
+    "total_tokens": 74,
+    "difficulty": "medium",
+    "raw_output": {
+      "id": "chatcmpl-4e0d7a8e-5c15-4c64-afb4-d5da16e06dd4",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "I would classify this email as: Technical.",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778391799,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 10,
+        "prompt_tokens": 64,
+        "total_tokens": 74,
+        "queue_time": 0.057887477,
+        "prompt_time": 0.005715992,
+        "completion_time": 0.055232003,
+        "total_time": 0.060947995
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr86jnr1ertvh4b56tq8xaqv",
+        "seed": 332783733
+      },
+      "service_tier": "on_demand"
+    }
+  }
+]
