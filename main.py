@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 from datetime import datetime
 
 from app.llm.classifier import classify_email, load_prompt
@@ -31,6 +32,11 @@ async def main() -> None:
     output_path = (
         f"outputs/eval_runs/"
         f"eval_{timestamp}.json"
+    )
+
+    os.makedirs(
+        "outputs/eval_runs",
+        exist_ok=True
     )
 
     with open(output_path, "w") as f:
