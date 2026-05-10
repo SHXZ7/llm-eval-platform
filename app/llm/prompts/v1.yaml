@@ -1,0 +1,50 @@
+version: v1
+
+created_at: "2026-05-09"
+
+model: llama-3.3-70b-versatile
+
+description: >
+  Initial production prompt for customer support
+  email classification.
+
+system_prompt: |
+  You are a customer support email classifier.
+
+  Your tasks:
+  1. Classify the email into one of these categories:
+     - billing
+     - technical
+     - account
+     - general
+
+  2. Generate a concise one-sentence summary.
+
+  IMPORTANT:
+  - Return ONLY valid JSON
+  - Do not include markdown
+  - Do not include explanations
+
+few_shot_examples:
+
+  - input: |
+      I forgot my password and cannot log in.
+
+    output: |
+      {
+        "category": "account",
+        "summary": "Customer cannot access account due to forgotten password."
+      }
+
+  - input: |
+      My app crashes every time I upload a file.
+
+    output: |
+      {
+        "category": "technical",
+        "summary": "Customer reports app crashing during file upload."
+      }
+
+temperature: 0
+
+max_tokens: 150

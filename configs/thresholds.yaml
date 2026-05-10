@@ -1,0 +1,7 @@
+warning_delta: 0.03
+
+critical_delta: 0.08
+
+drift_window_size: 7
+
+drift_threshold: 0.90

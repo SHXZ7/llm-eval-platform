@@ -1,0 +1,93 @@
+name: LLM Eval Pipeline
+
+on:
+
+  pull_request:
+
+    paths:
+      - "app/llm/prompts/**"
+
+
+jobs:
+
+  run-evals:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+
+        uses: actions/checkout@v4
+
+
+      - name: Setup Python
+
+        uses: actions/setup-python@v5
+
+        with:
+          python-version: "3.11"
+
+
+      - name: Install Dependencies
+
+        run: |
+
+          pip install -r requirements.txt
+
+
+      - name: Run Evaluation Pipeline
+
+        env:
+
+          GROQ_API_KEY:
+            ${{ secrets.GROQ_API_KEY }}
+
+          SLACK_WEBHOOK_URL:
+            ${{ secrets.SLACK_WEBHOOK_URL }}
+
+        run: |
+
+          python test_compare.py
+
+
+      - name: Upload HTML Report
+
+        uses: actions/upload-artifact@v4
+
+        with:
+
+          name: eval-report
+
+          path: outputs/reports/latest_report.html
+
+
+      - name: Post PR Comment
+
+        uses: actions/github-script@v7
+
+        with:
+
+          script: |
+
+            github.rest.issues.createComment({
+
+              issue_number:
+                context.issue.number,
+
+              owner:
+                context.repo.owner,
+
+              repo:
+                context.repo.repo,
+
+              body:
+                `
+                🚨 LLM Eval Completed
+
+                Severity:
+                ${{ job.status }}
+
+                See uploaded report artifact.
+                `
+            })

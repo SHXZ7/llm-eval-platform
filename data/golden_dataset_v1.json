@@ -1,0 +1,802 @@
+[
+  {
+    "id": "case_001",
+    "email": "Hi, I was charged twice for my monthly subscription and need a refund.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports duplicate subscription charge and requests refund.",
+    "difficulty": "easy",
+    "notes": "Simple duplicate billing issue."
+  },
+  {
+    "id": "case_002",
+    "email": "The app crashes every time I upload a PDF.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports app crashing during PDF upload.",
+    "difficulty": "easy",
+    "notes": "Straightforward crash report."
+  },
+  {
+    "id": "case_003",
+    "email": "I forgot my password and can't log in.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot access account due to forgotten password.",
+    "difficulty": "easy",
+    "notes": "Basic account access issue."
+  },
+  {
+    "id": "case_004",
+    "email": "Do you offer discounts for students?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about student discounts.",
+    "difficulty": "easy",
+    "notes": "General pricing inquiry."
+  },
+  {
+    "id": "case_005",
+    "email": "I canceled last week but was still billed today.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was charged after canceling subscription.",
+    "difficulty": "medium",
+    "notes": "Billing issue involving cancellation timing."
+  },
+  {
+    "id": "case_006",
+    "email": "Your latest update freezes my screen whenever I open settings.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports app freezing after latest update.",
+    "difficulty": "medium",
+    "notes": "Update-related performance issue."
+  },
+  {
+    "id": "case_007",
+    "email": "I never received the email verification code.",
+    "expected_category": "account",
+    "expected_summary": "Customer did not receive email verification code.",
+    "difficulty": "easy",
+    "notes": "Verification workflow issue."
+  },
+  {
+    "id": "case_008",
+    "email": "Can I use your service on multiple devices at the same time?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about multi-device usage.",
+    "difficulty": "easy",
+    "notes": "Feature usage question."
+  },
+  {
+    "id": "case_009",
+    "email": "Refund pls",
+    "expected_category": "billing",
+    "expected_summary": "Customer requests refund.",
+    "difficulty": "hard",
+    "notes": "Very short customer request."
+  },
+  {
+    "id": "case_010",
+    "email": "Amazing update. Now the app crashes before it even opens.",
+    "expected_category": "technical",
+    "expected_summary": "Customer sarcastically reports app crashing on launch.",
+    "difficulty": "hard",
+    "notes": "Sarcastic technical complaint."
+  },
+  {
+    "id": "case_011",
+    "email": "i cant login to my accnt after changing my phone",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot access account after changing phone.",
+    "difficulty": "hard",
+    "notes": "Typos and informal writing."
+  },
+  {
+    "id": "case_012",
+    "email": "What payment methods do you support?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about supported payment methods.",
+    "difficulty": "easy",
+    "notes": "Simple informational question."
+  },
+  {
+    "id": "case_013",
+    "email": "I upgraded to premium but the features are still locked.",
+    "expected_category": "billing",
+    "expected_summary": "Customer upgraded account but premium features remain inaccessible.",
+    "difficulty": "medium",
+    "notes": "Billing and account ambiguity."
+  },
+  {
+    "id": "case_014",
+    "email": "The search feature takes forever to load now.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports slow search performance.",
+    "difficulty": "medium",
+    "notes": "Performance degradation issue."
+  },
+  {
+    "id": "case_015",
+    "email": "Someone changed my account email without my permission.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports unauthorized account email change.",
+    "difficulty": "medium",
+    "notes": "Potential security concern."
+  },
+  {
+    "id": "case_016",
+    "email": "Do you have a dark mode feature?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks whether dark mode is available.",
+    "difficulty": "easy",
+    "notes": "General product question."
+  },
+  {
+    "id": "case_017",
+    "email": "Why did my invoice amount suddenly increase this month?",
+    "expected_category": "billing",
+    "expected_summary": "Customer questions unexpected invoice increase.",
+    "difficulty": "medium",
+    "notes": "Unexpected billing change."
+  },
+  {
+    "id": "case_018",
+    "email": "Every uploaded image becomes blurry after processing.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports image quality degradation after upload.",
+    "difficulty": "medium",
+    "notes": "Media processing bug."
+  },
+  {
+    "id": "case_019",
+    "email": "My account keeps logging me out every few minutes.",
+    "expected_category": "account",
+    "expected_summary": "Customer experiences repeated account logouts.",
+    "difficulty": "medium",
+    "notes": "Session persistence issue."
+  },
+  {
+    "id": "case_020",
+    "email": "Do you provide an API for developers?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks if developer API is available.",
+    "difficulty": "easy",
+    "notes": "Developer inquiry."
+  },
+  {
+    "id": "case_021",
+    "email": "I was billed in USD even though my account is set to euros.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports incorrect billing currency.",
+    "difficulty": "medium",
+    "notes": "Currency mismatch issue."
+  },
+  {
+    "id": "case_022",
+    "email": "The mobile app won't open on Android 14.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports app compatibility issue with Android 14.",
+    "difficulty": "medium",
+    "notes": "OS compatibility bug."
+  },
+  {
+    "id": "case_023",
+    "email": "I accidentally deleted my account. Can it be restored?",
+    "expected_category": "account",
+    "expected_summary": "Customer asks about restoring deleted account.",
+    "difficulty": "medium",
+    "notes": "Account recovery request."
+  },
+  {
+    "id": "case_024",
+    "email": "Is there a yearly subscription option?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about annual subscription plans.",
+    "difficulty": "easy",
+    "notes": "Subscription information request."
+  },
+  {
+    "id": "case_025",
+    "email": "I requested a refund three weeks ago and still haven't received it.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports delayed refund processing.",
+    "difficulty": "medium",
+    "notes": "Refund delay complaint."
+  },
+  {
+    "id": "case_026",
+    "email": "The notification system stopped working after yesterday's update.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports notifications failing after update.",
+    "difficulty": "medium",
+    "notes": "Regression after software update."
+  },
+  {
+    "id": "case_027",
+    "email": "I changed my password but the old one still works.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports password update not applying correctly.",
+    "difficulty": "hard",
+    "notes": "Potential security issue."
+  },
+  {
+    "id": "case_028",
+    "email": "Can your software export data to Excel?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about Excel export support.",
+    "difficulty": "easy",
+    "notes": "Feature capability question."
+  },
+  {
+    "id": "case_029",
+    "email": "No puedo iniciar sesión en mi cuenta.",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot log into account.",
+    "difficulty": "hard",
+    "notes": "Spanish language login issue."
+  },
+  {
+    "id": "case_030",
+    "email": "Your payment page just spins forever.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports payment page loading indefinitely.",
+    "difficulty": "medium",
+    "notes": "Technical issue affecting checkout."
+  },
+  {
+    "id": "case_031",
+    "email": "NOBODY IS HELPING ME. I HAVE BEEN WAITING FOR A REFUND FOR A MONTH AND NOTHING.",
+    "expected_category": "billing",
+    "expected_summary": "Customer demands long-overdue refund with frustration.",
+    "difficulty": "medium",
+    "notes": "All caps, highly frustrated tone."
+  },
+  {
+    "id": "case_032",
+    "email": "Great job guys. My files are all gone after your amazing update.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports data loss following an app update.",
+    "difficulty": "hard",
+    "notes": "Sarcasm masking a serious data loss issue."
+  },
+  {
+    "id": "case_033",
+    "email": "plz help cant log in tried evrything",
+    "expected_category": "account",
+    "expected_summary": "Customer is unable to log in after exhausting options.",
+    "difficulty": "hard",
+    "notes": "Typo-heavy, extremely short, informal."
+  },
+  {
+    "id": "case_034",
+    "email": "Do you support team collaboration features?",
+    "expected_category": "general",
+    "expected_summary": "Customer inquires about team collaboration functionality.",
+    "difficulty": "easy",
+    "notes": "Standard product capability question."
+  },
+  {
+    "id": "case_035",
+    "email": "I was charged twice in one day. Also I can't access my dashboard anymore. Please help with both.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports duplicate charge and dashboard access issue.",
+    "difficulty": "hard",
+    "notes": "Multi-issue: billing + account."
+  },
+  {
+    "id": "case_036",
+    "email": "Mon compte a été suspendu sans raison.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports account suspended without reason.",
+    "difficulty": "hard",
+    "notes": "French language account suspension."
+  },
+  {
+    "id": "case_037",
+    "email": "The export to CSV button does nothing when I click it.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports non-functional CSV export button.",
+    "difficulty": "medium",
+    "notes": "UI interaction bug."
+  },
+  {
+    "id": "case_038",
+    "email": "How do I cancel my subscription?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks how to cancel their subscription.",
+    "difficulty": "easy",
+    "notes": "General how-to question."
+  },
+  {
+    "id": "case_039",
+    "email": "I downgraded my plan but you're still billing me at the premium rate.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports being billed at old premium rate after downgrade.",
+    "difficulty": "medium",
+    "notes": "Plan downgrade not reflected in billing."
+  },
+  {
+    "id": "case_040",
+    "email": "Videos won't play on Safari. Tried on Chrome and it works fine.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports video playback failure specific to Safari.",
+    "difficulty": "medium",
+    "notes": "Browser-specific compatibility issue."
+  },
+  {
+    "id": "case_041",
+    "email": "I think someone hacked my account. There are logins from countries I've never been to.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports suspicious logins suggesting account compromise.",
+    "difficulty": "hard",
+    "notes": "Potential security breach, urgent."
+  },
+  {
+    "id": "case_042",
+    "email": "refund",
+    "expected_category": "billing",
+    "expected_summary": "Customer requests a refund.",
+    "difficulty": "hard",
+    "notes": "Single-word message with no context."
+  },
+  {
+    "id": "case_043",
+    "email": "I've been a loyal customer for 3 years and this is how you treat me? I was charged for a plan I never signed up for, and when I tried to log in to fix it, my account was locked. I spent two hours on your help page and found nothing useful. This is absolutely unacceptable.",
+    "expected_category": "billing",
+    "expected_summary": "Long-standing customer reports unauthorized charge and account lockout.",
+    "difficulty": "hard",
+    "notes": "Long complaint email with multiple issues and emotional tone."
+  },
+  {
+    "id": "case_044",
+    "email": "Does your plan include unlimited storage?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks whether storage is unlimited on current plan.",
+    "difficulty": "easy",
+    "notes": "Simple feature question."
+  },
+  {
+    "id": "case_045",
+    "email": "The 2FA code I receive never works.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports two-factor authentication codes failing.",
+    "difficulty": "medium",
+    "notes": "Authentication flow issue."
+  },
+  {
+    "id": "case_046",
+    "email": "Your app is so optimized it crashed my whole phone. Congrats.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports app causing device crash.",
+    "difficulty": "hard",
+    "notes": "Sarcastic report of severe app crash."
+  },
+  {
+    "id": "case_047",
+    "email": "I upgraded but I'm not sure if the payment went through.",
+    "expected_category": "billing",
+    "expected_summary": "Customer is uncertain whether upgrade payment was processed.",
+    "difficulty": "medium",
+    "notes": "Ambiguous billing/account overlap."
+  },
+  {
+    "id": "case_048",
+    "email": "Nicht in der Lage, mein Passwort zurückzusetzen.",
+    "expected_category": "account",
+    "expected_summary": "Customer unable to reset password.",
+    "difficulty": "hard",
+    "notes": "German language password reset issue."
+  },
+  {
+    "id": "case_049",
+    "email": "MY ACCOUNT IS LOCKED AND I HAVE A PRESENTATION IN AN HOUR PLEASE HELP URGENTLY",
+    "expected_category": "account",
+    "expected_summary": "Customer urgently reports account lockout before a time-sensitive event.",
+    "difficulty": "hard",
+    "notes": "All caps, urgent tone, time pressure."
+  },
+  {
+    "id": "case_050",
+    "email": "Is there a free trial available?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about free trial availability.",
+    "difficulty": "easy",
+    "notes": "Basic pre-sales question."
+  },
+  {
+    "id": "case_051",
+    "email": "The drag and drop feature is broken on Windows 11.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports drag and drop not working on Windows 11.",
+    "difficulty": "medium",
+    "notes": "OS-specific UI bug."
+  },
+  {
+    "id": "case_052",
+    "email": "I got charged $99 but I only signed up for the $9 plan. What is going on?",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports being overcharged relative to selected plan.",
+    "difficulty": "medium",
+    "notes": "Significant billing discrepancy."
+  },
+  {
+    "id": "case_053",
+    "email": "cant remmber my passowrd or the email i used to sign up lol",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot recover account due to forgotten password and email.",
+    "difficulty": "hard",
+    "notes": "Heavy typos, informal tone, account recovery edge case."
+  },
+  {
+    "id": "case_054",
+    "email": "I need an invoice for my last payment for tax purposes.",
+    "expected_category": "billing",
+    "expected_summary": "Customer requests invoice for tax documentation.",
+    "difficulty": "easy",
+    "notes": "Billing document request."
+  },
+  {
+    "id": "case_055",
+    "email": "Do you have a desktop app or only web-based?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about desktop app availability.",
+    "difficulty": "easy",
+    "notes": "Platform availability question."
+  },
+  {
+    "id": "case_056",
+    "email": "My collaborator can see my private files. That shouldn't be possible.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports collaborator has unauthorized access to private files.",
+    "difficulty": "hard",
+    "notes": "Privacy/permissions security concern."
+  },
+  {
+    "id": "case_057",
+    "email": "The app keeps asking me to log in even though I clicked 'remember me'.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports persistent login prompts despite using remember me option.",
+    "difficulty": "medium",
+    "notes": "Session/cookie persistence bug."
+  },
+  {
+    "id": "case_058",
+    "email": "I want to switch from monthly to annual billing.",
+    "expected_category": "billing",
+    "expected_summary": "Customer requests switch from monthly to annual billing cycle.",
+    "difficulty": "easy",
+    "notes": "Billing cycle change request."
+  },
+  {
+    "id": "case_059",
+    "email": "no puedo ver mis archivos, todo esta en blanco",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports blank screen with no files visible.",
+    "difficulty": "hard",
+    "notes": "Spanish language, UI rendering issue."
+  },
+  {
+    "id": "case_060",
+    "email": "I've upgraded my account to premium but my team members still see the free tier. Also I was billed twice this month.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports premium upgrade not reflecting for team and duplicate charge.",
+    "difficulty": "hard",
+    "notes": "Multi-issue: billing + account/team access."
+  },
+  {
+    "id": "case_061",
+    "email": "SCAM. YOU CHARGED ME WITHOUT PERMISSION.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports unauthorized charge and accuses service of fraud.",
+    "difficulty": "hard",
+    "notes": "All caps, accusatory, emotionally charged."
+  },
+  {
+    "id": "case_062",
+    "email": "How do I add more users to my team plan?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks how to add team members to their plan.",
+    "difficulty": "easy",
+    "notes": "General product how-to question."
+  },
+  {
+    "id": "case_063",
+    "email": "Files I uploaded last week have disappeared. No warning, nothing.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports previously uploaded files missing without explanation.",
+    "difficulty": "hard",
+    "notes": "Unexpected data loss, no error message."
+  },
+  {
+    "id": "case_064",
+    "email": "I updated my billing address but invoices still show the old one.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports invoice address not updating after change.",
+    "difficulty": "medium",
+    "notes": "Billing data update not reflected."
+  },
+  {
+    "id": "case_065",
+    "email": "My username was changed and I didn't do it.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports unauthorized username change.",
+    "difficulty": "hard",
+    "notes": "Possible account compromise."
+  },
+  {
+    "id": "case_066",
+    "email": "Oh wow, the app runs SO smoothly now. Except for the part where nothing works.",
+    "expected_category": "technical",
+    "expected_summary": "Customer sarcastically reports app being completely non-functional.",
+    "difficulty": "hard",
+    "notes": "Heavy sarcasm, unclear specific issue."
+  },
+  {
+    "id": "case_067",
+    "email": "What's your data retention policy?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about data retention practices.",
+    "difficulty": "easy",
+    "notes": "Compliance/policy question."
+  },
+  {
+    "id": "case_068",
+    "email": "I cancelled my account 2 months ago but you're still charging me every month. I've emailed before with no response.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports ongoing charges after cancellation with no prior support response.",
+    "difficulty": "hard",
+    "notes": "Recurring unauthorized charges, escalation."
+  },
+  {
+    "id": "case_069",
+    "email": "The print layout is completely broken. Everything overlaps.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports broken print layout with overlapping elements.",
+    "difficulty": "medium",
+    "notes": "Print/render formatting bug."
+  },
+  {
+    "id": "case_070",
+    "email": "I think I signed up with two different emails. Can you merge the accounts?",
+    "expected_category": "account",
+    "expected_summary": "Customer requests merging of two accounts created with different emails.",
+    "difficulty": "medium",
+    "notes": "Duplicate account merge request."
+  },
+  {
+    "id": "case_071",
+    "email": "help",
+    "expected_category": "general",
+    "expected_summary": "Customer requests help with no further detail.",
+    "difficulty": "hard",
+    "notes": "Single word, no context whatsoever."
+  },
+  {
+    "id": "case_072",
+    "email": "I'm being billed in a currency that isn't mine and the conversion rate is terrible. Who decided this?",
+    "expected_category": "billing",
+    "expected_summary": "Customer complains about incorrect billing currency and conversion rate.",
+    "difficulty": "medium",
+    "notes": "Currency mismatch with frustration."
+  },
+  {
+    "id": "case_073",
+    "email": "The dark mode you added burns my retinas. Please fix.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports dark mode causing visual discomfort, requests fix.",
+    "difficulty": "medium",
+    "notes": "Casual complaint about UI/visual experience."
+  },
+  {
+    "id": "case_074",
+    "email": "I can log in on mobile but not on desktop. Same account, same password.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports login working on mobile but failing on desktop.",
+    "difficulty": "hard",
+    "notes": "Platform-specific login issue."
+  },
+  {
+    "id": "case_075",
+    "email": "Do you offer HIPAA-compliant plans?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about HIPAA-compliant plan availability.",
+    "difficulty": "easy",
+    "notes": "Compliance-specific pre-sales inquiry."
+  },
+  {
+    "id": "case_076",
+    "email": "I'm paying for 10 seats but can only activate 7. The rest give an error.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports paid seats not fully activatable due to errors.",
+    "difficulty": "hard",
+    "notes": "Billing and technical overlap: seats paid but not provisioned."
+  },
+  {
+    "id": "case_077",
+    "email": "Mein Abonnement wurde ohne Vorwarnung gekündigt.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports subscription cancelled without notice.",
+    "difficulty": "hard",
+    "notes": "German language, unexpected cancellation."
+  },
+  {
+    "id": "case_078",
+    "email": "The API rate limits are way too low for production use. Is there a higher tier?",
+    "expected_category": "general",
+    "expected_summary": "Customer inquires about higher API rate limit tiers for production.",
+    "difficulty": "medium",
+    "notes": "Developer-focused product question."
+  },
+  {
+    "id": "case_079",
+    "email": "app crashes whn i try 2 share a file 2 anyone",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports app crashing when attempting to share files.",
+    "difficulty": "hard",
+    "notes": "Typos and shorthand, file sharing crash."
+  },
+  {
+    "id": "case_080",
+    "email": "I got an email saying my subscription was upgraded but I never requested that. Now I see a higher charge.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports unsolicited subscription upgrade and unexpected charge.",
+    "difficulty": "hard",
+    "notes": "Potential unauthorized account change with billing impact."
+  },
+  {
+    "id": "case_081",
+    "email": "Your SSO integration with Google is broken. It redirects to an error page.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports Google SSO redirecting to error page.",
+    "difficulty": "medium",
+    "notes": "OAuth/SSO integration failure."
+  },
+  {
+    "id": "case_082",
+    "email": "Can I transfer my account to someone else?",
+    "expected_category": "account",
+    "expected_summary": "Customer asks about transferring account ownership.",
+    "difficulty": "easy",
+    "notes": "Account management question."
+  },
+  {
+    "id": "case_083",
+    "email": "I WAS DOUBLE CHARGED. THIS IS THE THIRD TIME. SORT IT OUT.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports recurring duplicate charges in frustration.",
+    "difficulty": "hard",
+    "notes": "All caps, repeat billing issue, escalation."
+  },
+  {
+    "id": "case_084",
+    "email": "Everything was fine until this morning. Now the whole dashboard is just white.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports dashboard suddenly displaying blank white screen.",
+    "difficulty": "medium",
+    "notes": "Sudden regression, no clear trigger."
+  },
+  {
+    "id": "case_085",
+    "email": "How long does it take to process a refund?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks about refund processing time.",
+    "difficulty": "easy",
+    "notes": "General billing process question."
+  },
+  {
+    "id": "case_086",
+    "email": "I changed my email address but now I can't verify the new one and the old one no longer works.",
+    "expected_category": "account",
+    "expected_summary": "Customer is locked out after email change left account unverifiable.",
+    "difficulty": "hard",
+    "notes": "Email change creating access loop."
+  },
+  {
+    "id": "case_087",
+    "email": "je n'arrive pas à télécharger mes fichiers, ça tourne sans arrêt",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports file download spinning indefinitely.",
+    "difficulty": "hard",
+    "notes": "French language, infinite spinner on download."
+  },
+  {
+    "id": "case_088",
+    "email": "I've been charged the team plan rate but I'm a solo user. I only chose individual.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports being billed for team plan instead of individual plan.",
+    "difficulty": "medium",
+    "notes": "Wrong plan assigned at billing."
+  },
+  {
+    "id": "case_089",
+    "email": "Notifications are coming 3–4 hours late. Makes them completely useless.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports significant notification delivery delay.",
+    "difficulty": "medium",
+    "notes": "Push notification latency issue."
+  },
+  {
+    "id": "case_090",
+    "email": "I have two separate issues. First, I need a refund for last month. Second, my password reset email never arrives.",
+    "expected_category": "billing",
+    "expected_summary": "Customer requests refund and reports missing password reset emails.",
+    "difficulty": "hard",
+    "notes": "Explicit multi-issue: billing + account."
+  },
+  {
+    "id": "case_091",
+    "email": "What's the difference between the Pro and Business plans?",
+    "expected_category": "general",
+    "expected_summary": "Customer asks for comparison between Pro and Business plan tiers.",
+    "difficulty": "easy",
+    "notes": "Pre-sales plan comparison question."
+  },
+  {
+    "id": "case_092",
+    "email": "My wohle team cant login sinse yesterday, nothing works",
+    "expected_category": "account",
+    "expected_summary": "Customer reports entire team unable to log in since yesterday.",
+    "difficulty": "hard",
+    "notes": "Typos, team-wide access outage."
+  },
+  {
+    "id": "case_093",
+    "email": "The app is great. Ten out of ten. Except the part where it deleted all my projects.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports all projects deleted, framed sarcastically.",
+    "difficulty": "hard",
+    "notes": "Sarcastic framing of critical data loss."
+  },
+  {
+    "id": "case_094",
+    "email": "I need to update my credit card on file. Where do I do that?",
+    "expected_category": "billing",
+    "expected_summary": "Customer asks how to update stored payment card details.",
+    "difficulty": "easy",
+    "notes": "Payment method management question."
+  },
+  {
+    "id": "case_095",
+    "email": "On my laptop it works. On my PC it doesn't open. Both Windows 11.",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports app not opening on one of two Windows 11 devices.",
+    "difficulty": "hard",
+    "notes": "Device-specific inconsistency, same OS."
+  },
+  {
+    "id": "case_096",
+    "email": "I was offered a 20% discount by your sales team but it wasn't applied to my invoice.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports promised discount not applied to invoice.",
+    "difficulty": "medium",
+    "notes": "Sales promise not reflected in billing."
+  },
+  {
+    "id": "case_097",
+    "email": "no se puede cambiar el idioma en la app, siempre vuelve al inglés",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports app language setting always reverting to English.",
+    "difficulty": "hard",
+    "notes": "Spanish language, localization/settings persistence bug."
+  },
+  {
+    "id": "case_098",
+    "email": "Someone is logged into my account right now and I can see them moving things. Please help immediately.",
+    "expected_category": "account",
+    "expected_summary": "Customer reports active unauthorized access to account in real time.",
+    "difficulty": "hard",
+    "notes": "Critical live security incident, urgent."
+  },
+  {
+    "id": "case_099",
+    "email": "I signed up for the free plan but I'm seeing a charge on my card. I never entered my card details.",
+    "expected_category": "billing",
+    "expected_summary": "Customer reports unexpected charge despite signing up for free plan.",
+    "difficulty": "hard",
+    "notes": "Ambiguous billing on free tier, possible fraud concern."
+  },
+  {
+    "id": "case_100",
+    "email": "I've been using your product for two years and I have to say — this month has been a disaster. The app crashes on startup, I got charged twice, my password reset isn't working, and when I finally reached your chat support they disconnected me. I'm seriously reconsidering my subscription.",
+    "expected_category": "technical",
+    "expected_summary": "Long-term customer reports app crash, duplicate charge, broken password reset, and poor support experience.",
+    "difficulty": "hard",
+    "notes": "Long multi-issue complaint: technical + billing + account + support failure."
+  }
+]

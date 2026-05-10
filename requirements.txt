@@ -1,0 +1,9 @@
+openai
+pydantic
+pyyaml
+python-dotenv
+pandas 
+matplotlib 
+jinja2
+requests
+PyGithub

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Eval Report</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        th {
+            background: #f5f5f5;
+        }
+
+        .critical {
+            color: red;
+            font-weight: bold;
+        }
+
+        .warning {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .ok {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>LLM Evaluation Report</h1>
+
+<h2>Run Metadata</h2>
+
+<ul>
+    <li>
+        <b>Baseline Prompt:</b>
+        {{ baseline_prompt }}
+    </li>
+
+    <li>
+        <b>Candidate Prompt:</b>
+        {{ candidate_prompt }}
+    </li>
+    <li><b>Model:</b> {{ model }}</li>
+    <li><b>Timestamp:</b> {{ timestamp }}</li>
+    <li>
+        <b>Severity:</b>
+
+        <span class="{{ severity }}">
+            {{ severity }}
+        </span>
+    </li>
+    <li>
+        <b>Comparison Meaning:</b>
+
+        This severity reflects the
+        difference between baseline
+        and candidate runs.
+    </li>
+</ul>
+
+<h2>Scorecard</h2>
+
+<table>
+    <tr>
+        <th>Metric</th>
+        <th>Previous</th>
+        <th>Current</th>
+        <th>Delta</th>
+    </tr>
+
+    <tr>
+        <td>Accuracy</td>
+
+        <td>{{ previous_accuracy }}</td>
+
+        <td>{{ current_accuracy }}</td>
+
+        <td>{{ accuracy_delta }}</td>
+    </tr>
+</table>
+
+<h2>Regressions</h2>
+
+<table>
+
+<tr>
+    <th>Case ID</th>
+    <th>Expected</th>
+    <th>Old Prediction</th>
+    <th>New Prediction</th>
+</tr>
+
+{% for row in regressions %}
+
+<tr>
+    <td>{{ row.case_id }}</td>
+
+    <td>{{ row.expected }}</td>
+
+    <td>{{ row.old_prediction }}</td>
+
+    <td>{{ row.new_prediction }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<h2>Drift Detection</h2>
+
+<p>
+    <b>Drift Detected:</b>
+    {{ drift_detected }}
+</p>
+
+<p>
+    <b>7-Run Moving Average:</b>
+    {{ moving_average }}
+</p>
+
+<h2>Trend Chart</h2>
+
+<img src="{{ chart_path }}" width="700">
+
+</body>
+</html>

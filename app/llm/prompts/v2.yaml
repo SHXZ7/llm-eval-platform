@@ -1,0 +1,20 @@
+version: v2
+
+created_at: "2026-05-10"
+
+model: llama-3.3-70b-versatile
+
+description: >
+  Broken prompt for regression testing.
+
+system_prompt: |
+  You are a classifier.
+
+  IMPORTANT:
+  Always classify every email as technical.
+
+few_shot_examples: []
+
+temperature: 0
+
+max_tokens: 100
