@@ -1,0 +1,492 @@
+[
+  {
+    "case_id": "case_031",
+    "expected_category": "billing",
+    "predicted_category": "billing",
+    "expected_summary": "Customer demands long-overdue refund with frustration.",
+    "predicted_summary": "Customer is awaiting a refund that has been delayed for a month.",
+    "category_correct": true,
+    "summary_score": 4,
+    "latency_ms": 308.82790000759996,
+    "prompt_tokens": 209,
+    "completion_tokens": 28,
+    "total_tokens": 237,
+    "difficulty": "medium",
+    "raw_output": {
+      "id": "chatcmpl-2a350655-c0e8-460b-9c15-db098d56e54f",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"billing\",\n  \"summary\": \"Customer is awaiting a refund that has been delayed for a month.\"\n}\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401211,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 28,
+        "prompt_tokens": 209,
+        "total_tokens": 237,
+        "queue_time": 0.056268012,
+        "prompt_time": 0.010404434,
+        "completion_time": 0.074616759,
+        "total_time": 0.085021193
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fhwjgf78s6ttsbpts3qeb",
+        "seed": 1741519020
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_032",
+    "expected_category": "technical",
+    "predicted_category": "technical",
+    "expected_summary": "Customer reports data loss following an app update.",
+    "predicted_summary": "Customer reports loss of files after a recent update.",
+    "category_correct": true,
+    "summary_score": 4,
+    "latency_ms": 345.61249999387655,
+    "prompt_tokens": 201,
+    "completion_tokens": 25,
+    "total_tokens": 226,
+    "difficulty": "hard",
+    "raw_output": {
+      "id": "chatcmpl-c8c54da8-8d5a-4b67-8123-02e5237da235",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"technical\",\n  \"summary\": \"Customer reports loss of files after a recent update.\"\n}\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401213,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 25,
+        "prompt_tokens": 201,
+        "total_tokens": 226,
+        "queue_time": 0.054832755,
+        "prompt_time": 0.010207574,
+        "completion_time": 0.058152987,
+        "total_time": 0.068360561
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fhz6ffdwbb15pds4crptq",
+        "seed": 173675090
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_033",
+    "expected_category": "account",
+    "predicted_category": "account",
+    "expected_summary": "Customer is unable to log in after exhausting options.",
+    "predicted_summary": "Customer is unable to log in despite trying various methods.",
+    "category_correct": true,
+    "summary_score": 5,
+    "latency_ms": 332.2109000000637,
+    "prompt_tokens": 197,
+    "completion_tokens": 26,
+    "total_tokens": 223,
+    "difficulty": "hard",
+    "raw_output": {
+      "id": "chatcmpl-6e67525a-0357-41c6-8c66-48ffa9f2fec4",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"account\",\n  \"summary\": \"Customer is unable to log in despite trying various methods.\"\n}",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401216,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_4f6d808339",
+      "usage": {
+        "completion_tokens": 26,
+        "prompt_tokens": 197,
+        "total_tokens": 223,
+        "queue_time": 0.156501097,
+        "prompt_time": 0.01012851,
+        "completion_time": 0.03984246,
+        "total_time": 0.04997097
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fj1ndfdyvqcqck0xa5h6c",
+        "seed": 1685764692
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_034",
+    "expected_category": "general",
+    "predicted_category": "general",
+    "expected_summary": "Customer inquires about team collaboration functionality.",
+    "predicted_summary": "Customer inquires about team collaboration features.",
+    "category_correct": true,
+    "summary_score": 5,
+    "latency_ms": 189.62390000524465,
+    "prompt_tokens": 194,
+    "completion_tokens": 23,
+    "total_tokens": 217,
+    "difficulty": "easy",
+    "raw_output": {
+      "id": "chatcmpl-4e32cb85-e5d5-474a-9c77-9ade88b2c4de",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"general\",\n  \"summary\": \"Customer inquires about team collaboration features.\"\n}\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401219,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 23,
+        "prompt_tokens": 194,
+        "total_tokens": 217,
+        "queue_time": 0.055796793,
+        "prompt_time": 0.017835482,
+        "completion_time": 0.039553632,
+        "total_time": 0.057389114
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fj4bff7yvdmk9vgmtw113",
+        "seed": 1510432304
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_035",
+    "expected_category": "billing",
+    "predicted_category": "billing",
+    "expected_summary": "Customer reports duplicate charge and dashboard access issue.",
+    "predicted_summary": "Customer was double-charged and is also experiencing account access issues.",
+    "category_correct": true,
+    "summary_score": 4,
+    "latency_ms": 282.1071999933338,
+    "prompt_tokens": 209,
+    "completion_tokens": 28,
+    "total_tokens": 237,
+    "difficulty": "hard",
+    "raw_output": {
+      "id": "chatcmpl-26fc6865-4363-4199-9871-6c434aa77e3a",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"billing\",\n  \"summary\": \"Customer was double-charged and is also experiencing account access issues.\"\n}",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401221,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 28,
+        "prompt_tokens": 209,
+        "total_tokens": 237,
+        "queue_time": 0.054896191,
+        "prompt_time": 0.010165285,
+        "completion_time": 0.06864527,
+        "total_time": 0.078810555
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fj6t0f7zt2ctxx7tb39y9",
+        "seed": 140382482
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_036",
+    "expected_category": "account",
+    "predicted_category": "account",
+    "expected_summary": "Customer reports account suspended without reason.",
+    "predicted_summary": "Customer's account has been suspended without a given reason.",
+    "category_correct": true,
+    "summary_score": 4,
+    "latency_ms": 188.1199000054039,
+    "prompt_tokens": 196,
+    "completion_tokens": 26,
+    "total_tokens": 222,
+    "difficulty": "hard",
+    "raw_output": {
+      "id": "chatcmpl-9bc77546-4411-412f-be44-5ac2993348d2",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"account\",\n  \"summary\": \"Customer's account has been suspended without a given reason.\"\n}",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401224,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 26,
+        "prompt_tokens": 196,
+        "total_tokens": 222,
+        "queue_time": 0.054748928,
+        "prompt_time": 0.01088913,
+        "completion_time": 0.04810097,
+        "total_time": 0.0589901
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fj9enfegt5ahtm0dcbk75",
+        "seed": 393254462
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_037",
+    "expected_category": "technical",
+    "predicted_category": "technical",
+    "expected_summary": "Customer reports non-functional CSV export button.",
+    "predicted_summary": "Customer experiences issue with export to CSV button functionality.",
+    "category_correct": true,
+    "summary_score": 4,
+    "latency_ms": 303.10560000361875,
+    "prompt_tokens": 199,
+    "completion_tokens": 25,
+    "total_tokens": 224,
+    "difficulty": "medium",
+    "raw_output": {
+      "id": "chatcmpl-9e803eac-32de-4e16-b462-301fa734d0e8",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"technical\",\n  \"summary\": \"Customer experiences issue with export to CSV button functionality.\"\n}\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401226,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_3272ea2d91",
+      "usage": {
+        "completion_tokens": 25,
+        "prompt_tokens": 199,
+        "total_tokens": 224,
+        "queue_time": 0.158660062,
+        "prompt_time": 0.017891816,
+        "completion_time": 0.057930663,
+        "total_time": 0.075822479
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fjbtvf88rbhf9x0ztx51x",
+        "seed": 601813002
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_038",
+    "expected_category": "general",
+    "predicted_category": "account",
+    "expected_summary": "Customer asks how to cancel their subscription.",
+    "predicted_summary": "Customer requests cancellation of their subscription.",
+    "category_correct": false,
+    "summary_score": 5,
+    "latency_ms": 306.98449999908917,
+    "prompt_tokens": 194,
+    "completion_tokens": 22,
+    "total_tokens": 216,
+    "difficulty": "easy",
+    "raw_output": {
+      "id": "chatcmpl-c2286c61-c5b6-4159-8187-109917e9f645",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"account\",\n  \"summary\": \"Customer requests cancellation of their subscription.\"\n}\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401229,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_3272ea2d91",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 194,
+        "total_tokens": 216,
+        "queue_time": 0.161978624,
+        "prompt_time": 0.009914623,
+        "completion_time": 0.059477053,
+        "total_time": 0.069391676
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fjea5ferryr4b47egf8mk",
+        "seed": 2098257964
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_039",
+    "expected_category": "billing",
+    "predicted_category": "billing",
+    "expected_summary": "Customer reports being billed at old premium rate after downgrade.",
+    "predicted_summary": "Customer is being incorrectly billed at premium rate after downgrading plan.",
+    "category_correct": true,
+    "summary_score": 5,
+    "latency_ms": 399.3646000017179,
+    "prompt_tokens": 203,
+    "completion_tokens": 28,
+    "total_tokens": 231,
+    "difficulty": "medium",
+    "raw_output": {
+      "id": "chatcmpl-44c4d7ed-21d4-4202-856e-7df95631a470",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"billing\",\n  \"summary\": \"Customer is being incorrectly billed at premium rate after downgrading plan.\"\n}\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401232,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_3272ea2d91",
+      "usage": {
+        "completion_tokens": 28,
+        "prompt_tokens": 203,
+        "total_tokens": 231,
+        "queue_time": 0.160068892,
+        "prompt_time": 0.010290476,
+        "completion_time": 0.0722407,
+        "total_time": 0.082531176
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fjgx4f8f97qkzjw33768h",
+        "seed": 1772248283
+      },
+      "service_tier": "on_demand"
+    }
+  },
+  {
+    "case_id": "case_040",
+    "expected_category": "technical",
+    "predicted_category": "technical",
+    "expected_summary": "Customer reports video playback failure specific to Safari.",
+    "predicted_summary": "Customer experiences video playback issues on Safari browser.",
+    "category_correct": true,
+    "summary_score": 4,
+    "latency_ms": 305.1594000135083,
+    "prompt_tokens": 202,
+    "completion_tokens": 24,
+    "total_tokens": 226,
+    "difficulty": "medium",
+    "raw_output": {
+      "id": "chatcmpl-ac4232f8-6b61-4e5e-a2c6-26ee15c45d77",
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": "{\n  \"category\": \"technical\",\n  \"summary\": \"Customer experiences video playback issues on Safari browser.\"\n}\n",
+            "role": "assistant",
+            "function_call": null,
+            "tool_calls": null
+          },
+          "logprobs": null
+        }
+      ],
+      "created": 1778401234,
+      "model": "llama-3.3-70b-versatile",
+      "object": "chat.completion",
+      "system_fingerprint": "fp_dae98b5ecb",
+      "usage": {
+        "completion_tokens": 24,
+        "prompt_tokens": 202,
+        "total_tokens": 226,
+        "queue_time": 0.058651933,
+        "prompt_time": 0.020145372,
+        "completion_time": 0.067900455,
+        "total_time": 0.088045827
+      },
+      "usage_breakdown": null,
+      "x_groq": {
+        "id": "req_01kr8fjkkjf8ktj7x5bwxxg0jr",
+        "seed": 422724087
+      },
+      "service_tier": "on_demand"
+    }
+  }
+]

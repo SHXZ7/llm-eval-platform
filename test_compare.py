@@ -1,5 +1,7 @@
 import json
 import sys
+import os
+import matplotlib.pyplot as plt
 
 from app.models.schemas import EvalResult
 from app.evals.comparator import compare_runs
@@ -27,28 +29,32 @@ from app.evals.drift_detector import (
 )
 
 
-with open(
-    "outputs/eval_runs/eval_v1.json"
-) as f:
+baseline_path = (
+    "baselines/baseline_v1.json"
+)
 
-    old_data = json.load(f)
+with open(baseline_path) as f:
+
+    previous_data = json.load(f)
 
 
-with open(
+candidate_path = (
     "outputs/eval_runs/eval_v2.json"
-) as f:
+)
 
-    new_data = json.load(f)
+with open(candidate_path) as f:
+
+    current_data = json.load(f)
 
 
 old_results = [
     EvalResult(**item)
-    for item in old_data
+    for item in previous_data
 ]
 
 new_results = [
     EvalResult(**item)
-    for item in new_data
+    for item in current_data
 ]
 
 
