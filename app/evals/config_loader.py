@@ -16,6 +16,7 @@ def load_thresholds(path):
         thresholds = yaml.safe_load(file)
     
     # Allow environment variable overrides
+    # Priority: ENV vars > YAML file > hardcoded defaults
     thresholds["warning_delta"] = float(
         os.getenv("WARNING_DELTA", thresholds.get("warning_delta", 0.03))
     )
