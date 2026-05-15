@@ -4,6 +4,16 @@
 
 This platform continuously evaluates LLM classifier performance against a golden dataset by comparing prompt versions, detecting accuracy drift, and alerting the team to regressions. When we deploy a new prompt iteration to production, we run it against 100+ historical email cases we've manually classified. The system compares predicted categories and summaries against ground truth, flags any accuracy drop above configurable thresholds, surfaces category-specific breakdowns, and notifies Slack with detailed HTML reports so we catch issues before they affect customers.
 
+## In Action
+
+**Slack Alert on Regression Detection**
+![Slack Alert](photos/1.png)
+*Real-time notification showing accuracy drop (90% → 20%), severity level, regressions count, and link to full report.*
+
+**GitHub Actions Pipeline Execution**
+![GitHub Actions Workflow](photos/2.png)
+*CI/CD pipeline successfully running all evaluation steps: checkout, setup Python, run evaluations, copy report, upload artifacts, post PR comment.*
+
 ## Setup
 
 ### Prerequisites
@@ -114,6 +124,20 @@ drift_threshold: 0.90
 ```
 
 The precedence is: `ENV vars > YAML defaults`. Always use ENV vars in production.
+
+## System Architecture
+
+![System Architecture](photos/arch.png)
+
+**Full architecture details**: See [ARCHITECTURE.md](ARCHITECTURE.md) for complete component breakdown, data flows, and deployment topology.
+
+### Core Layers
+
+1. **Data Layer** - Golden datasets, baselines, configs
+2. **LLM Inference** - Async classification with Groq (rate-limited)
+3. **Evaluation Engine** - Comparison, drift detection, quality scoring
+4. **Reporting** - HTML reports + Slack alerts
+5. **Orchestration** - GitHub Actions CI/CD + Docker containerization
 
 ## Architecture Decisions
 
