@@ -96,9 +96,9 @@ report_path = generate_report(
 
 print(f"Report saved to {report_path}")
 
-report_url = (
-    "http://localhost:5500/"
-    "outputs/reports/latest_report.html"
+report_url = os.getenv(
+    "REPORT_URL",
+    "Report uploaded as GitHub artifact"
 )
 
 print()

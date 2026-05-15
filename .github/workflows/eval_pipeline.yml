@@ -62,6 +62,15 @@ jobs:
           python test_compare.py
 
 
+      - name: Copy Report
+
+        run: |
+
+          mkdir -p docs
+
+          cp outputs/reports/latest_report.html docs/index.html
+
+
       - name: Upload HTML Report
 
         uses: actions/upload-artifact@v4
