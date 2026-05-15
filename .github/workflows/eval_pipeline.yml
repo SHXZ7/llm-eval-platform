@@ -4,10 +4,19 @@ on:
 
   pull_request:
 
-    paths:
-      - "app/llm/prompts/**"
+    branches:
+      - main
+
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
 jobs:
 
   run-evals:
